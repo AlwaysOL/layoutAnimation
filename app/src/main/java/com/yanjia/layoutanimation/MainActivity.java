@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.yanjia.layoutanimation.tickview.TickActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GridRecycleViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.tickView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TickActivity.class);
                 startActivity(intent);
             }
         });
